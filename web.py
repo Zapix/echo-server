@@ -7,7 +7,7 @@ import aiohttp_cors
 from mtpylon.configuration import configure_app
 
 from schema import schema as app_schema
-from rsa_manager import rsa_pairs
+from rsa_keys import get_rsa_keys
 
 # create console handler and set level to debug
 ch = logging.StreamHandler(sys.stdout)
@@ -30,7 +30,7 @@ if __name__ == '__main__':
         {
             'rsa_manager': {
                 'params': {
-                    'rsa_keys': rsa_pairs
+                    'rsa_keys': get_rsa_keys()
                 }
             },
             'pub_keys_path': '/pub-keys',
