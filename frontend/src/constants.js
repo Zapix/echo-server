@@ -1,0 +1,3 @@
+export const MTPROTO_CONNECTING = 'CONNECTING';
+export const MTPROTO_ONLINE = 'ONLINE';
+export const MTPROTO_OFFLINE = 'OFFLINE';
